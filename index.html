@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="nav-right">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <h1>Grow your business with us</h1>
+        <p>Our team will help you scale your business</p>
+        <div class="hero-buttons">
+            <button class="btn-primary">Get Started</button>
+            <button class="btn-secondary">Learn More</button>
+        </div>
+    </section>
+
+
+    <section class="main">
+
+        <div class="main-left">
+            <div class="videos">
+                <div class="vid">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+                <div class="vid">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+            </div>
+
+            <div class="tab-section">
+
+                <div class="tab-wizard">
+
+                    <div class="tabs">
+                        <input type="radio" id="tab1" name="tab" checked>
+                        <label for="tab1">Products</label>
+                        <input type="radio" id="tab2" name="tab">
+                        <label for="tab2">Services</label>
+                        <input type="radio" id="tab3" name="tab">
+                        <label for="tab3">Blogs</label>
+                        <input type="radio" id="tab4" name="tab">
+                        <label for="tab4">Contact</label>
+
+                        <div class="tab-content">
+                            <p><strong>Wizard design</strong><br>Show Active tab - Color change</p>
+                        </div>
+                    </div>
+
+                    <div class="subscribe">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="sub">Subscribe</button>
+                    </div>
+
+                </div>
+
+
+                <!-- <div class="personal-info">
+                    <h3>Step 1: Personal Info</h3>
+                    <div class="progress-bar"><span></span></div>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <div class="form-buttons">
+                        <button class="btn-secondary" disabled>Back</button>
+                        <button class="btn-primary">Next</button>
+                    </div>
+                </div> -->
+
+                <div class="personal-info">
+
+                    <input type="radio" name="step" id="step1" checked>
+                    <input type="radio" name="step" id="step2">
+                    <input type="radio" name="step" id="step3">
+
+                    <!-- Progress Bar -->
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+
+                    <!-- ✅ Step 1 -->
+                    <div class="form-step step-1">
+                        <h3>Step 1: Personal Info</h3>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <div class="form-buttons">
+                            <label class="btn-secondary disabled">Back</label>
+                            <label for="step2" class="btn-primary">Next</label>
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- ✅ Step 2 -->
+                    <div class="form-step step-2">
+                        <h3>Step 2: Account Security</h3>
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="New Password">
+                        <div class="form-buttons">
+                            <label for="step1" class="btn-secondary">Back</label>
+                            <label for="step3" class="btn-primary">Next</label>
+                        </div>
+                    </div>
+
+                    <!-- ✅ Step 3 -->
+                    <div class="form-step step-3">
+                        <h3>Step 3: Contact Details</h3>
+                        <input type="text" placeholder="Phone Number">
+                        <input type="text" placeholder="Address">
+                        <div class="form-buttons">
+                            <label for="step2" class="btn-secondary">Back</label>
+                            <button class="btn-primary">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="grid-right">
+
+            <div class="kpi-cards">
+                <div class="card"><i class="fas fa-tasks"> 275</i> <span>Projects Completed</span></div>
+                <div class="card"><i class="fas fa-users"> 632</i> <span>Active Users</span></div>
+                <div class="card"><i class="fas fa-handshake"> 158</i> <span>Partners</span></div>
+                <div class="card"><i class="fas fa-star"> 4.7</i> <span>Feedback Score</span></div>
+            </div>
+
+            <div class="stats">
+                <h3>Statistics</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Step 1</th>
+                            <th>Steps</th>
+                            <th>Stodate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>275</td>
+                            <td>Poveus dupe</td>
+                            <td><i class="fa-solid fa-greater-than" style="font-size: 8px;"></i></td>
+                        </tr>
+                        <tr>
+                            <td>632</td>
+                            <td>Active Users</td>
+                            <td><i class="fa-solid fa-greater-than" style="font-size: 8px;"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

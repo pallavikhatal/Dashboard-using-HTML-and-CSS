@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0b0f19;
+  color: white;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0b0f19;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.nav-left a:hover {
+  color: #3b82f6;
+}
+
+.nav-right i {
+  margin-left: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero p {
+  color: #aaa;
+  margin: 10px 0 20px;
+  font-size: 16px;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-secondary {
+  background: #1f2937;
+  color: white;
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+
+.main-left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-left .videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.main-left .videos .vid {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.main-left .videos .vid iframe {
+  width: 45%;
+  height: 120px;
+  border-radius: 5px;
+  border: none;
+}
+
+.tab-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tab-wizard {
+  flex: 2;
+  gap: 10px;
+}
+
+.tabs {
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs label {
+  padding: 8px 15px;
+  cursor: pointer;
+  color: #aaa;
+  display: inline-block;
+}
+
+.tabs input[type="radio"]:checked+label {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+}
+
+.tab-content {
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.subscribe {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.subscribe input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #333;
+  background-color: #0b0f19;
+  border-radius: 5px;
+}
+
+.subscribe .sub {
+  background: #2563eb;
+  color: white;
+  padding: 0px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.personal-info {
+  flex: 1;
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+
+.progress-bar {
+  background: #333;
+  border-radius: 5px;
+  height: 6px;
+  margin: 10px 0 20px;
+  overflow: hidden;
+}
+
+.progress {
+  background: #2563eb;
+  height: 100%;
+  width: 33%;
+  transition: width 0.3s;
+}
+
+
+.form-step {
+  display: none;
+  flex-direction: column;
+}
+
+input {
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background: #333;
+  color: white;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+#step1:checked~.progress-bar .progress {
+  width: 33%;
+}
+
+#step2:checked~.progress-bar .progress {
+  width: 66%;
+}
+
+#step3:checked~.progress-bar .progress {
+  width: 100%;
+}
+
+#step1:checked~.step-1 {
+  display: flex;
+}
+
+#step2:checked~.step-2 {
+  display: flex;
+}
+
+#step3:checked~.step-3 {
+  display: flex;
+}
+
+
+
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 40%;
+}
+
+
+.grid-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+
+.kpi-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  flex: 1 1 calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 15px;
+  border: 1px solid #333;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  min-width: 180px;
+}
+
+.card i {
+  font-size: 18px;
+  color: white;
+}
+
+.card strong {
+  font-size: 16px;
+}
+
+.card span {
+  font-size: 13px;
+  color: #bbb;
+}
+
+
+.stats {
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.stats h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+}
+
+thead tr {
+  border-bottom: 1px solid #333;
+}
+
+tbody tr {
+  border-top: 1px solid #222;
+}
+
+tbody tr:hover {
+  background: rgba(37, 99, 235, 0.1);
+  cursor: pointer;
+}
+
+td:last-child {
+  text-align: right;
+  font-size: 18px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .tab-section {
+        flex-direction: column;
+    }
+
+    .grid-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-left a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .vid iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .subscribe input,
+    .btn-sub {
+        width: 100%;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
